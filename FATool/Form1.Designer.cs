@@ -28,20 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea15 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea16 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea17 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea18 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea14 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea13 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.Process = new System.Windows.Forms.Button();
             this.chckBoxRoundingAllowed = new System.Windows.Forms.CheckBox();
             this.flowLayoutPanelInputs = new System.Windows.Forms.FlowLayoutPanel();
@@ -68,7 +74,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.WindowsDropdown = new System.Windows.Forms.ComboBox();
             this.lblResultArea = new System.Windows.Forms.TextBox();
-            this.CoeficientsChart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.FIRImpulseResponseChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.txtBoxCutoutFrequency2 = new System.Windows.Forms.TextBox();
             this.txtBoxCutoutFrequency1 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -78,6 +84,7 @@
             this.CalculateRealCoeficientsHP = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label18 = new System.Windows.Forms.Label();
             this.FIRChartOutputs = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.BtnGenerateSignal = new System.Windows.Forms.Button();
             this.BtnProcessSignal = new System.Windows.Forms.Button();
@@ -89,6 +96,7 @@
             this.FIRFilterInputFieldsLayout = new System.Windows.Forms.FlowLayoutPanel();
             this.FIRChartInputs = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label19 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -107,6 +115,9 @@
             this.label9 = new System.Windows.Forms.Label();
             this.ApproximationDropdown = new System.Windows.Forms.ComboBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.label20 = new System.Windows.Forms.Label();
+            this.IIRChartOutputs = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.IIRChartInputs = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.txtBoxAWeightsCount = new System.Windows.Forms.TextBox();
             this.txtBoxBWeightsCount = new System.Windows.Forms.TextBox();
             this.IRRFilterAWeights = new System.Windows.Forms.FlowLayoutPanel();
@@ -119,24 +130,23 @@
             this.txtBoxIIREquation = new System.Windows.Forms.TextBox();
             this.btnLoadIIRFilter = new System.Windows.Forms.Button();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.IIRChartInputs = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.IIRChartOutputs = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.FIRTransitionChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.IIRTransitionChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CoeficientsChart)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CoeficientsChart2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FIRImpulseResponseChart)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FIRChartOutputs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FIRChartInputs)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IIRChartInputs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IIRChartOutputs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IIRChartInputs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FIRTransitionChart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IIRTransitionChart)).BeginInit();
             this.SuspendLayout();
             // 
             // Process
@@ -292,18 +302,18 @@
             // 
             // CoeficientsChart
             // 
-            chartArea15.Name = "DFT";
-            this.CoeficientsChart.ChartAreas.Add(chartArea15);
+            chartArea1.Name = "DFT";
+            this.CoeficientsChart.ChartAreas.Add(chartArea1);
             this.CoeficientsChart.Location = new System.Drawing.Point(516, 140);
             this.CoeficientsChart.Name = "CoeficientsChart";
-            series15.ChartArea = "DFT";
-            series15.Name = "Values";
-            this.CoeficientsChart.Series.Add(series15);
+            series1.ChartArea = "DFT";
+            series1.Name = "Values";
+            this.CoeficientsChart.Series.Add(series1);
             this.CoeficientsChart.Size = new System.Drawing.Size(384, 338);
             this.CoeficientsChart.TabIndex = 16;
             this.CoeficientsChart.Text = "CoeficientsChart";
-            title5.Name = "Title1";
-            this.CoeficientsChart.Titles.Add(title5);
+            title1.Name = "Title1";
+            this.CoeficientsChart.Titles.Add(title1);
             // 
             // SaveCoeficients
             // 
@@ -365,10 +375,11 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.FIRTransitionChart);
             this.tabPage2.Controls.Add(this.label10);
             this.tabPage2.Controls.Add(this.WindowsDropdown);
             this.tabPage2.Controls.Add(this.lblResultArea);
-            this.tabPage2.Controls.Add(this.CoeficientsChart2);
+            this.tabPage2.Controls.Add(this.FIRImpulseResponseChart);
             this.tabPage2.Controls.Add(this.txtBoxCutoutFrequency2);
             this.tabPage2.Controls.Add(this.txtBoxCutoutFrequency1);
             this.tabPage2.Controls.Add(this.label8);
@@ -423,21 +434,21 @@
             this.lblResultArea.Size = new System.Drawing.Size(437, 226);
             this.lblResultArea.TabIndex = 27;
             // 
-            // CoeficientsChart2
+            // FIRImpulseResponseChart
             // 
-            chartArea16.Name = "DFT";
-            this.CoeficientsChart2.ChartAreas.Add(chartArea16);
-            this.CoeficientsChart2.Location = new System.Drawing.Point(358, 293);
-            this.CoeficientsChart2.Name = "CoeficientsChart2";
-            series16.ChartArea = "DFT";
-            series16.Name = "Values";
-            this.CoeficientsChart2.Series.Add(series16);
-            this.CoeficientsChart2.Size = new System.Drawing.Size(482, 238);
-            this.CoeficientsChart2.TabIndex = 26;
-            this.CoeficientsChart2.Text = "CoeficientsChart2";
-            title6.Name = "Title1";
-            title6.Text = "Impulsní odezva";
-            this.CoeficientsChart2.Titles.Add(title6);
+            chartArea3.Name = "DFT";
+            this.FIRImpulseResponseChart.ChartAreas.Add(chartArea3);
+            this.FIRImpulseResponseChart.Location = new System.Drawing.Point(465, 329);
+            this.FIRImpulseResponseChart.Name = "FIRImpulseResponseChart";
+            series3.ChartArea = "DFT";
+            series3.Name = "Values";
+            this.FIRImpulseResponseChart.Series.Add(series3);
+            this.FIRImpulseResponseChart.Size = new System.Drawing.Size(375, 238);
+            this.FIRImpulseResponseChart.TabIndex = 26;
+            this.FIRImpulseResponseChart.Text = "FIRImpulseResponseChart";
+            title3.Name = "Title1";
+            title3.Text = "Impulsní odezva";
+            this.FIRImpulseResponseChart.Titles.Add(title3);
             // 
             // txtBoxCutoutFrequency2
             // 
@@ -531,15 +542,25 @@
             this.tabPage3.Text = "FIR Filtr";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label18.Location = new System.Drawing.Point(443, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(161, 42);
+            this.label18.TabIndex = 21;
+            this.label18.Text = "FIR Filtr";
+            // 
             // FIRChartOutputs
             // 
-            chartArea17.Name = "ChartArea1";
-            this.FIRChartOutputs.ChartAreas.Add(chartArea17);
+            chartArea4.Name = "ChartArea1";
+            this.FIRChartOutputs.ChartAreas.Add(chartArea4);
             this.FIRChartOutputs.Location = new System.Drawing.Point(500, 327);
             this.FIRChartOutputs.Name = "FIRChartOutputs";
-            series17.ChartArea = "ChartArea1";
-            series17.Name = "Series1";
-            this.FIRChartOutputs.Series.Add(series17);
+            series4.ChartArea = "ChartArea1";
+            series4.Name = "Series1";
+            this.FIRChartOutputs.Series.Add(series4);
             this.FIRChartOutputs.Size = new System.Drawing.Size(376, 265);
             this.FIRChartOutputs.TabIndex = 20;
             this.FIRChartOutputs.Text = "FIRChartOutputs";
@@ -621,18 +642,19 @@
             // 
             // FIRChartInputs
             // 
-            chartArea18.Name = "ChartArea1";
-            this.FIRChartInputs.ChartAreas.Add(chartArea18);
+            chartArea5.Name = "ChartArea1";
+            this.FIRChartInputs.ChartAreas.Add(chartArea5);
             this.FIRChartInputs.Location = new System.Drawing.Point(8, 327);
             this.FIRChartInputs.Name = "FIRChartInputs";
-            series18.ChartArea = "ChartArea1";
-            series18.Name = "Series1";
-            this.FIRChartInputs.Series.Add(series18);
+            series5.ChartArea = "ChartArea1";
+            series5.Name = "Series1";
+            this.FIRChartInputs.Series.Add(series5);
             this.FIRChartInputs.Size = new System.Drawing.Size(376, 265);
             this.FIRChartInputs.TabIndex = 0;
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.IIRTransitionChart);
             this.tabPage4.Controls.Add(this.label19);
             this.tabPage4.Controls.Add(this.label16);
             this.tabPage4.Controls.Add(this.label15);
@@ -657,6 +679,16 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Návrh IIR Filtru ";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label19.Location = new System.Drawing.Point(257, 11);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(282, 42);
+            this.label19.TabIndex = 19;
+            this.label19.Text = "Návrh IIR Filtru";
             // 
             // label16
             // 
@@ -836,6 +868,40 @@
             this.tabPage5.Text = "IIR Filtr";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label20.Location = new System.Drawing.Point(499, 11);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(151, 42);
+            this.label20.TabIndex = 29;
+            this.label20.Text = "IIR Filtr";
+            // 
+            // IIRChartOutputs
+            // 
+            chartArea7.Name = "ChartArea1";
+            this.IIRChartOutputs.ChartAreas.Add(chartArea7);
+            this.IIRChartOutputs.Location = new System.Drawing.Point(496, 316);
+            this.IIRChartOutputs.Name = "IIRChartOutputs";
+            series7.ChartArea = "ChartArea1";
+            series7.Name = "Series1";
+            this.IIRChartOutputs.Series.Add(series7);
+            this.IIRChartOutputs.Size = new System.Drawing.Size(376, 265);
+            this.IIRChartOutputs.TabIndex = 28;
+            // 
+            // IIRChartInputs
+            // 
+            chartArea8.Name = "ChartArea1";
+            this.IIRChartInputs.ChartAreas.Add(chartArea8);
+            this.IIRChartInputs.Location = new System.Drawing.Point(41, 316);
+            this.IIRChartInputs.Name = "IIRChartInputs";
+            series8.ChartArea = "ChartArea1";
+            series8.Name = "Series1";
+            this.IIRChartInputs.Series.Add(series8);
+            this.IIRChartInputs.Size = new System.Drawing.Size(376, 265);
+            this.IIRChartInputs.TabIndex = 27;
+            // 
             // txtBoxAWeightsCount
             // 
             this.txtBoxAWeightsCount.Location = new System.Drawing.Point(476, 174);
@@ -942,59 +1008,37 @@
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
             // 
-            // IIRChartInputs
+            // FIRTransitionChart
             // 
-            chartArea14.Name = "ChartArea1";
-            this.IIRChartInputs.ChartAreas.Add(chartArea14);
-            this.IIRChartInputs.Location = new System.Drawing.Point(41, 316);
-            this.IIRChartInputs.Name = "IIRChartInputs";
-            series14.ChartArea = "ChartArea1";
-            series14.Name = "Series1";
-            this.IIRChartInputs.Series.Add(series14);
-            this.IIRChartInputs.Size = new System.Drawing.Size(376, 265);
-            this.IIRChartInputs.TabIndex = 27;
+            chartArea2.Name = "DFT";
+            this.FIRTransitionChart.ChartAreas.Add(chartArea2);
+            this.FIRTransitionChart.Location = new System.Drawing.Point(12, 329);
+            this.FIRTransitionChart.Name = "FIRTransitionChart";
+            series2.ChartArea = "DFT";
+            series2.Name = "Values";
+            this.FIRTransitionChart.Series.Add(series2);
+            this.FIRTransitionChart.Size = new System.Drawing.Size(390, 238);
+            this.FIRTransitionChart.TabIndex = 30;
+            this.FIRTransitionChart.Text = "FIRTransitionChart";
+            title2.Name = "Title1";
+            title2.Text = "Přechodová charakteristika";
+            this.FIRTransitionChart.Titles.Add(title2);
             // 
-            // IIRChartOutputs
+            // IIRTransitionChart
             // 
-            chartArea13.Name = "ChartArea1";
-            this.IIRChartOutputs.ChartAreas.Add(chartArea13);
-            this.IIRChartOutputs.Location = new System.Drawing.Point(496, 316);
-            this.IIRChartOutputs.Name = "IIRChartOutputs";
-            series13.ChartArea = "ChartArea1";
-            series13.Name = "Series1";
-            this.IIRChartOutputs.Series.Add(series13);
-            this.IIRChartOutputs.Size = new System.Drawing.Size(376, 265);
-            this.IIRChartOutputs.TabIndex = 28;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label18.Location = new System.Drawing.Point(443, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(161, 42);
-            this.label18.TabIndex = 21;
-            this.label18.Text = "FIR Filtr";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label19.Location = new System.Drawing.Point(257, 11);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(282, 42);
-            this.label19.TabIndex = 19;
-            this.label19.Text = "Návrh IIR Filtru";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label20.Location = new System.Drawing.Point(499, 11);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(151, 42);
-            this.label20.TabIndex = 29;
-            this.label20.Text = "IIR Filtr";
+            chartArea6.Name = "DFT";
+            this.IIRTransitionChart.ChartAreas.Add(chartArea6);
+            this.IIRTransitionChart.Location = new System.Drawing.Point(505, 81);
+            this.IIRTransitionChart.Name = "IIRTransitionChart";
+            series6.ChartArea = "DFT";
+            series6.Name = "Values";
+            this.IIRTransitionChart.Series.Add(series6);
+            this.IIRTransitionChart.Size = new System.Drawing.Size(390, 238);
+            this.IIRTransitionChart.TabIndex = 31;
+            this.IIRTransitionChart.Text = "IIRTransitionChart";
+            title4.Name = "Title1";
+            title4.Text = "Přechodová charakteristika";
+            this.IIRTransitionChart.Titles.Add(title4);
             // 
             // Form1
             // 
@@ -1010,7 +1054,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.CoeficientsChart)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CoeficientsChart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FIRImpulseResponseChart)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FIRChartOutputs)).EndInit();
@@ -1019,9 +1063,11 @@
             this.tabPage4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IIRChartInputs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IIRChartOutputs)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IIRChartInputs)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FIRTransitionChart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IIRTransitionChart)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1060,7 +1106,7 @@
         private System.Windows.Forms.TextBox txtBoxCutoutFrequency1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DataVisualization.Charting.Chart CoeficientsChart2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart FIRImpulseResponseChart;
         private System.Windows.Forms.TextBox lblResultArea;
         private System.Windows.Forms.ComboBox WindowsDropdown;
         private System.Windows.Forms.TextBox FIRFilterInputCount;
@@ -1109,6 +1155,8 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.DataVisualization.Charting.Chart FIRTransitionChart;
+        private System.Windows.Forms.DataVisualization.Charting.Chart IIRTransitionChart;
     }
 }
 
