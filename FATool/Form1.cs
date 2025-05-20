@@ -137,8 +137,8 @@ namespace FATool
             objSeries7.ChartType = SeriesChartType.BoxPlot; // or SeriesChartType.Point
             objSeries7.Name = "MySeries";
 
-            var objChart8 = IIRTransitionChart.ChartAreas[0];
-            var objSeries8 = IIRTransitionChart.Series[0];
+            var objChart8 = IIRImpulseResponseChart.ChartAreas[0];
+            var objSeries8 = IIRImpulseResponseChart.Series[0];
             objChart8.AxisY.Enabled = AxisEnabled.True;
             objChart8.AxisY.Enabled = AxisEnabled.True;
             objChart8.AxisX.Title = "Koeficient";
@@ -150,6 +150,21 @@ namespace FATool
             objChart8.AxisY.MajorGrid.LineWidth = 0;
             objSeries8.ChartType = SeriesChartType.BoxPlot; // or SeriesChartType.Point
             objSeries8.Name = "MySeries";
+
+            var objChart9 = IIRTransitionChart.ChartAreas[0];
+            var objSeries9 = IIRTransitionChart.Series[0];
+            objChart9.AxisY.Enabled = AxisEnabled.True;
+            objChart9.AxisY.Enabled = AxisEnabled.True;
+            objChart9.AxisX.Title = "Koeficient";
+            objChart9.AxisY.Title = "Velikost";
+            objChart9.AxisX.Minimum = 0;
+            objSeries9.BorderWidth = 2;
+
+            objChart9.AxisX.MajorGrid.LineWidth = 0;
+            objChart9.AxisY.MajorGrid.LineWidth = 0;
+            objSeries9.ChartType = SeriesChartType.BoxPlot; // or SeriesChartType.Point
+            objSeries9.Name = "MySeries";
+
 
 
             var objChart3 = FIRChartInputs.ChartAreas[0];
@@ -1356,6 +1371,7 @@ namespace FATool
                             }
                             resultString = resultString.Remove(resultString.LastIndexOf("\r\n"));
                             TxtBoxaCoeficients.Text += resultString;
+                            IIRCalculateImpulseCharacteristics();
                             IIRCalculateTransitionCharacteristics();
                             break;
 
@@ -1434,6 +1450,7 @@ namespace FATool
                             }
                             resultStringP = resultStringP.Remove(resultStringP.LastIndexOf("\r\n"));
                             TxtBoxaCoeficients.Text += resultStringP;
+                            IIRCalculateImpulseCharacteristics();
                             IIRCalculateTransitionCharacteristics();
                             break;
 
@@ -1523,13 +1540,14 @@ namespace FATool
             TxtBoxaCoeficients.Text += resultStringLP;
 
 
+            IIRCalculateImpulseCharacteristics();
             IIRCalculateTransitionCharacteristics();
 
         }
 
-        private void IIRCalculateTransitionCharacteristics()
+        private void IIRCalculateImpulseCharacteristics()
         {//INPUTS JE JEDNICKA a POTOM NULY,POCET STEJNY JAKO POCET VAH + 3 PRO JASNOST, VYKRESLIT DO GRAFU
-            IIRTransitionChart.Series[0].Points.Clear();
+            IIRImpulseResponseChart.Series[0].Points.Clear();
 
             List<double> cDigitalCoeficients = new List<double>();
 
@@ -1592,19 +1610,19 @@ namespace FATool
             } 
             dDigitalCoeficients.Insert(1, 0);
 
-            int numberOfInputs = cDigitalCoeficients.Count + 3;
+            int numberOfInputs = cDigitalCoeficients.Count + 10;
 
             if (numberOfInputs > 0 && numberOfInputs >= 0)
             {
-                IIRTransitionChart.ChartAreas[0].AxisX.Minimum = 0;
-                IIRTransitionChart.ChartAreas[0].AxisX.Maximum = numberOfInputs;
-                IIRTransitionChart.ChartAreas[0].AxisX.Crossing = 0;
-                IIRTransitionChart.ChartAreas[0].AxisY.Crossing = 0;
+                IIRImpulseResponseChart.ChartAreas[0].AxisX.Minimum = 0;
+                IIRImpulseResponseChart.ChartAreas[0].AxisX.Maximum = numberOfInputs;
+                IIRImpulseResponseChart.ChartAreas[0].AxisX.Crossing = 0;
+                IIRImpulseResponseChart.ChartAreas[0].AxisY.Crossing = 0;
 
-                IIRTransitionChart.ChartAreas[0].AxisX.Minimum = 0;
-                IIRTransitionChart.ChartAreas[0].AxisX.Maximum = numberOfInputs;
-                IIRTransitionChart.ChartAreas[0].AxisX.Crossing = 0;
-                IIRTransitionChart.ChartAreas[0].AxisY.Crossing = 0;
+                IIRImpulseResponseChart.ChartAreas[0].AxisX.Minimum = 0;
+                IIRImpulseResponseChart.ChartAreas[0].AxisX.Maximum = numberOfInputs;
+                IIRImpulseResponseChart.ChartAreas[0].AxisX.Crossing = 0;
+                IIRImpulseResponseChart.ChartAreas[0].AxisY.Crossing = 0;
 
 
 
@@ -1647,13 +1665,130 @@ namespace FATool
 
 
 
-                    IIRTransitionChart.Series[0].Points.AddXY(i, value);
+                    IIRImpulseResponseChart.Series[0].Points.AddXY(i, value);
                 }
 
             }
         }
 
+        private void IIRCalculateTransitionCharacteristics()
+        {//INPUTS JE JEDNICKA a POTOM NULY,POCET STEJNY JAKO POCET VAH + 3 PRO JASNOST, VYKRESLIT DO GRAFU
+            IIRTransitionChart.Series[0].Points.Clear();
 
+            List<double> cDigitalCoeficients = new List<double>();
+
+            string weights = TxtBoxbCoeficients.Text;
+
+            string[] cWeightsArray = weights.Replace("\r\n", "|").Split('|');
+
+
+            txtBoxBWeightsCount.Text = cWeightsArray.Length.ToString();
+            for (int i = cWeightsArray.Length - 1; i >= 0; i--)
+            {
+                Double.TryParse(cWeightsArray[i].ToString(), out double dweight);
+
+                if (Math.Abs(dweight) < 0.01)
+                {
+                    cDigitalCoeficients.Add(0);
+                    dweight = 0;
+
+                }
+                else
+                {
+                    dweight = Math.Round(dweight, 3);
+                    cDigitalCoeficients.Add(dweight);
+
+                }
+
+                //this.FIRFilterWeightsFieldsLayout.Controls[i].Text = WeightsArray[i].ToString();
+            }
+
+
+            List<double> dDigitalCoeficients = new List<double>();
+
+            string dweights = TxtBoxaCoeficients.Text;
+
+            string[] dWeightsArray = dweights.Replace("\r\n", "|").Split('|');
+
+
+
+            txtBoxAWeightsCount.Text = dWeightsArray.Length.ToString();
+            for (int i = 1; i <= dWeightsArray.Length - 1; i++)
+            {
+
+                Double.TryParse(dWeightsArray[i].ToString(), out double ddweight);
+
+                if (Math.Abs(ddweight) < 0.01)
+                {
+                    ddweight = 0;
+                    dDigitalCoeficients.Add(0);
+
+                }
+                else
+                {
+                    ddweight = Math.Round(ddweight, 3);
+                    dDigitalCoeficients.Add(ddweight);
+
+                }
+
+
+                //this.FIRFilterWeightsFieldsLayout.Controls[i].Text = WeightsArray[i].ToString();
+            }
+            dDigitalCoeficients.Insert(1, 0);
+
+            int numberOfInputs = cDigitalCoeficients.Count + 10;
+
+            if (numberOfInputs > 0 && numberOfInputs >= 0)
+            {
+                IIRTransitionChart.ChartAreas[0].AxisX.Minimum = 0;
+                IIRTransitionChart.ChartAreas[0].AxisX.Maximum = numberOfInputs;
+                IIRTransitionChart.ChartAreas[0].AxisX.Crossing = 0;
+                IIRTransitionChart.ChartAreas[0].AxisY.Crossing = 0;
+
+                IIRTransitionChart.ChartAreas[0].AxisX.Minimum = 0;
+                IIRTransitionChart.ChartAreas[0].AxisX.Maximum = numberOfInputs;
+                IIRTransitionChart.ChartAreas[0].AxisX.Crossing = 0;
+                IIRTransitionChart.ChartAreas[0].AxisY.Crossing = 0;
+
+
+
+                List<double> InputList = new List<double>();
+                List<double> OutputList = new List<double>();
+
+
+
+
+
+
+                for (int i = 0; i < numberOfInputs; i++)
+                {                    
+                        InputList.Add(1);
+                }
+                int FilterOrder = cDigitalCoeficients.Count;
+                if (FilterOrder < 0)
+                {
+                    return;
+                }
+
+                for (int i = 0; i < numberOfInputs; i++)
+                {
+
+
+
+
+
+
+                    double value = CalculateOutputSignalOnIndexIIR(InputList, cDigitalCoeficients, dDigitalCoeficients, OutputList, FilterOrder - 1, i);
+                    OutputList.Add(value);
+
+
+
+                    
+                    IIRTransitionChart.Series[0].Points.AddXY(i, value);
+                }
+
+            }
+        }
         #endregion
 
         private void DropdownFilterType_SelectedIndexChanged(object sender, EventArgs e)
